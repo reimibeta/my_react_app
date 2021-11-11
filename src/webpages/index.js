@@ -1,8 +1,6 @@
 //file: src/webpages/index.js
 import React from 'react';
 import {
-//   BrowserRouter as Router,
-  Switch,
   NavLink,
   BrowserRouter,
   Route,
