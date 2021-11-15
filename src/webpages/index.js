@@ -12,6 +12,7 @@ import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from '
 import Home from './home';
 import MyBooks from './mybooks';
 import Favorites from './favorites';
+import TestRedux from './test_redux';
 const Webpages = () => {
     return(
         <div>
@@ -23,6 +24,7 @@ const Webpages = () => {
                             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                             <Nav.Link as={NavLink} to="/mybooks">My Books</Nav.Link>
                             <Nav.Link as={NavLink} to="/favorites">Favorites</Nav.Link>
+                            <Nav.Link as={NavLink} to="/redux">My Redux</Nav.Link>
                         </Nav>
                 </Container>
             </Navbar>
@@ -56,6 +58,7 @@ const Webpages = () => {
                     <Route exact path="/" element={<Home />} />
                     <Route path = "/mybooks" element = {<MyBooks />} />
                     <Route path = "/favorites" element = {<Favorites />} />
+                    <Route path = "/redux" element = {<TestRedux />} />
                 </Routes>
             </BrowserRouter>
         </div>

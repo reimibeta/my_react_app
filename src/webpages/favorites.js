@@ -1,14 +1,15 @@
 //file: src/webpages/favorites.js
 import React, { useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 const Favorites = () => {
     useEffect(() => {
         document.title = 'My Favorites';
     });
     return (
-        <div>
+        <Container>
             <h1>Book App</h1>
             <p>These are my favorite books</p>
-        </div>
+        </Container>
     );
 };
 export default Favorites;
